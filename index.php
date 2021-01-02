@@ -1,5 +1,7 @@
 <?php include 'include/header.php'; ?>
-
+            <div class="slider">
+                
+            </div>
 <!-- About Start -->
             <div class="about">
                 <div class="container">
