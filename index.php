@@ -13,14 +13,17 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="about-text">
-                                <h2><span>10</span> Years Experience</h2>
+                                <h2>Welcome to Tomgo Agro Machines Pvt. Ltd</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                Tomgo Agro Machines Pvt. Ltd is a leading manufacturer and exporter of all types of Agro , Building construction and Commercial machines.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                The machines are made with precision and attention to each and every detail of the product keeping in mind the intention of customer and industrial requirements.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <p>
+                                We proudly announce we are the first one of the best manufacturer in making the innovative machines in mini size for the best price in India.
+                                </p>
+                                <a class="btn" href="about.php">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -125,7 +128,7 @@
                             </p>
                         </div>
                         <div class="col-md-3">
-                            <a class="btn" href="https://htmlcodex.com/contact">Contact Us</a>
+                            <a class="btn" href="contact.php">Contact Us</a>
                         </div>
                     </div>
                 </div>

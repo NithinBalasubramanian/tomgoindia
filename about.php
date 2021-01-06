@@ -24,19 +24,30 @@
                     <div class="row">
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img">
-                                <img src="img/about.jpg" alt="Image">
+                                <img src="img/tomgo/001.jpg" alt="Image" width="100%" height="100%">
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="about-text">
-                                <h2><span>10</span> Years Experience</h2>
+                                <h2>Our Profile </h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                Established in the year 2003 as a traders of  Backhoe loader spares. In addition to this we started to do the manufacture, supply, trade, retail,distribute and export a wide way of quality products.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                Our products comprises Mini machines, mini backhoe, mini loader, mini excavator, all hydraulic machines, hydraulic attachments and many more new variety of  products.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <p>
+                                We also do the trade the Backhoe loader New spares, JCB used spares, Hydraulic spares, golden car accessories, E- Bike, Loom solar and also Nammalvar Marachekku oil Machines.
+                                </p>
+                                <p>
+                                Our founder Mr. A. Thomas M.A  B.Ed has spent his valuable time  in research and design. He  experts in various ideas. We have been  maintained an excellent rapport with all our clients all around the places.
+                                </p>
+                                <h2>Our Mission </h2>
+                                <p>
+                                Our mission is to achieve customer satisfaction by offering best products and services of the highest quality and assuring the prompt delivery.
+                                </p>
+                                <h2>Our Team </h2>
+                                <p>We have been able to manufacture and supply a wide range of machines used in Agro,Construction and Industrial. </p>
                             </div>
                         </div>
                     </div>
