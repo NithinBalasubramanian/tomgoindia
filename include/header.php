@@ -112,7 +112,7 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="index.php" class="nav-item nav-link <?php active('index.php');?>">Home</a>
+                                        <a href="index.php" class="nav-item nav-link <?php active('index.php');?> <?php active('');?>">Home</a>
                                         <a href="about.php" class="nav-item nav-link <?php active('about.php');?>">About Us</a>
                                         <a href="product.php" class="nav-item nav-link <?php active('product.php');?>">Products</a>
                                         <a href="service.php" class="nav-item nav-link <?php active('service.php');?>">Services</a>
