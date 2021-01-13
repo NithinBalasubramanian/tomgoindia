@@ -4,7 +4,7 @@
             <div class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
                                 <h2>Get In Touch</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>Dindugul</p>
@@ -19,32 +19,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
-                                <a href="">About Us</a>
-                                <a href="">Our Story</a>
-                                <a href="">Our Services</a>
-                                <a href="">Our Projects</a>
-                                <a href="">Contact Us</a>
+                                <a href="about.php">About Us</a>
+                                <a href="product.php">Products</a>
+                                <a href="service.php">Our Services</a>
+                                <a href="contact.php">Contact Us</a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
-                                <h2>Useful Link</h2>
-                                <a href="">Our Clients</a>
-                                <a href="">Clients Review</a>
-                                <a href="">Ongoing Project</a>
-                                <a href="">Customer Support</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-4">
                             <div class="footer-form">
                                 <h2>Stay Updated</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
+                              
                                 <input class="form-control" placeholder="Email here">
                                 <button class="btn">Submit</button>
                             </div>
@@ -63,7 +50,7 @@
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <?php echo date('Y'); ?> || <a href="https://tomgoindia.com">Tomgoindia</a> || All Right Reserved.</p>
+                            <p>&copy; <?php echo date('Y'); ?> || <a href="admin.php" target="_blank">Tomgoindia</a> || All Right Reserved.</p>
                         </div>
                         <div class="col-md-6">
                             <p>Designed By <a href="">Virtual Technologies</a></p>

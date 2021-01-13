@@ -21,9 +21,22 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- fontawesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
+
+    <a href="https://api.whatsapp.com/send?phone=919731668852&text=Welcome to Tomgo India" class="watsapp">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="" class="social_link_fb">
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    </a>
+    <a href="" class="social_link_in">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
         <!-- Modal  -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
