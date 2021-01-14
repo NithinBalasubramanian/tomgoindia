@@ -87,7 +87,25 @@
             function next()
                 {
                         document.getElementById('slider-container').scrollLeft += 270;
+                }   
+            
+            $i=0;
+
+            function slide()
+            {
+                $img_array = ['img/tomgo/ba2.jpg','img/tomgo/ba1.jpg'];
+                
+                if($i < $img_array.length){
+                    document.getElementById('slide_img').src = $img_array[$i];
+                    $i++;
+                }else{
+                    $i=0;
                 }
-</script>
+            }
+
+            setInterval(() => {
+                slide();
+            }, 3000);
+        </script>
     </body>
 </html>

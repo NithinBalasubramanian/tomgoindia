@@ -215,6 +215,36 @@ a:focus {
     text-align: center;
 }
 
+.social_link_you{
+    position: fixed;
+    bottom: 140px;
+    left:10px;
+    margin-top: auto;
+    margin-right: auto;
+    z-index: 100;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(245, 94, 12, 1);
+    height: 55px;
+    width: 55px;
+    text-align: center;
+}
+
+
+.social_link_you i{
+    color:#fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+}
+
+.slider_img{
+    width:100%;
+    padding-top:100px;
+    height:100%;
+
+}
+
 .social_link_in{
     position: fixed;
     bottom: 20px;

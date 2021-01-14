@@ -28,13 +28,16 @@
 
     <body>
 
-    <a href="https://api.whatsapp.com/send?phone=919731668852&text=Welcome to Tomgo India" class="watsapp">
+    <a href="https://api.whatsapp.com/send?phone=919731668852&text=Welcome to Tomgo India" target="_blank" class="watsapp">
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
     </a>
-    <a href="" class="social_link_fb">
+    <a href="https://www.youtube.com/channel/UCd2E5RX1c19kq4XpLhRU5Vw" target="_blank" class="social_link_you">
+        <i class="fab fa-youtube" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.facebook.com/thomas.melina.1" target="_blank" class="social_link_fb">
         <i class="fab fa-facebook-f" aria-hidden="true"></i>
     </a>
-    <a href="" class="social_link_in">
+    <a href="" class="social_link_in" target="_blank">
         <i class="fab fa-instagram" aria-hidden="true"></i>
     </a>
         <!-- Modal  -->
@@ -94,8 +97,8 @@
                         <div class="col-lg-3">
                             <div class="brand">
                                 <a href="index.html">
-                                    Tomgoindia
-                                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                                    <!-- Tomgoindia -->
+                                    <img src="img/tomgo/logo.jpg" alt="Logo">
                                 </a>
                             </div>
                         </div>

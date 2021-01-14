@@ -1,6 +1,8 @@
 <?php include 'include/header.php'; ?>
             <div class="slider_banner">
-                
+                <div class="slider_img">
+                    <img src="img/tomgo/ba1.jpg" id="slide_img" width="100%" height="100%" alt="Banner">
+                </div>
             </div>
 <!-- About Start -->
             <div class="about">
