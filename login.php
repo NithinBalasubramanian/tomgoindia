@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+<?php include 'config/connection.php'; ?>
 <html>
 <head>
     <title>Login</title>
@@ -18,12 +19,12 @@
     </style>
 </head>
 <body>
-    <?php if($_SESSION['log']){ 
+    <?php if(isset($_SESSION['log'])){ 
         echo "<script>window.location.href='admin.php';</script>";
      }else{ ?>
         <div class="log">
             <div class="form">
-                <form action="">
+                <form action="" method="post">
                     <h2>Login</h2>
                     <div class="form-group">
                         <label for="email">Email : </label>
@@ -41,5 +42,17 @@
             </div>
         </div>
     <?php } ?>
+    <?php if(isset($_POST['login'])){
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $sql = "SELECT * FROM admin WHERE email='$email'AND password='$password'";
+            $result = mysqli_query($db,$sql);
+            if(!$result || mysqli_num_rows($result) > 0 ){
+               $_SESSION['log'] = 'admin';
+               echo "<script>window.location.href='admin.php';</script>";
+            }else{
+                echo "<script>window.location.href='login.php';</script>";
+            }   
+    } ?>
 </body>
 </html>

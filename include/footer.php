@@ -76,18 +76,29 @@
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 
         <script>
         	function prev(){
-                        document.getElementById('slider-container').scrollLeft -= 270;
+                    document.getElementById('slider-container').scrollLeft -= 270;
                 }
 
             function next()
                 {
-                        document.getElementById('slider-container').scrollLeft += 270;
-                }   
+                    document.getElementById('slider-container').scrollLeft += 270;
+                } 
+
+            function prev_feedback(){
+                   document.getElementById('slider-feed-container').scrollLeft -= 270;
+                }
+
+            function next_feedback()
+                {
+                    document.getElementById('slider-feed-container').scrollLeft += 270;
+                }     
             
             $i=0;
 
@@ -106,6 +117,10 @@
             setInterval(() => {
                 slide();
             }, 3000);
+
+            $(document).on('click','.menu',function(){
+                $('.toggle').toggleClass('toggle_on');
+            });
         </script>
     </body>
 </html>

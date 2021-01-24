@@ -1,4 +1,5 @@
 <?php include 'include/header.php'; ?>
+
             <div class="slider_banner">
                 <div class="slider_img">
                     <img src="img/tomgo/ba1.jpg" id="slide_img" width="100%" height="100%" alt="Banner">
@@ -154,16 +155,32 @@
 
             <!-- Testimonial Start -->
             <div class="testimonial">
-                <div class="container">
+                <div class="">
                     <div class="section-header">
                         <p>Client Review</p>
                         <h2>Client Says About Service</h2>
                     </div>
-                    <div class="video">
-                        <video width="100%" height="100%" controls>
-                            <source src="img/tomgo/t01.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                    <div id="slider-feed-container" class="slider">
+                        <div class="video slide">
+                            <video width="100%" height="100%" controls>
+                                <source src="img/tomgo/t01.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video slide">
+                            <video width="100%" height="100%" controls>
+                                <source src="img/tomgo/feed2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        
+                        <div onclick="prev_feedback()" class="control-prev-btn">
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                        <div onclick="next_feedback()" class="control-next-btn">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>

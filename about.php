@@ -57,7 +57,7 @@
 
 
             <!-- Story Start -->
-            <div class="story">
+            <!-- <div class="story">
                 <div class="container">
                     <div class="section-header">
                         <p>Company Story</p>
@@ -227,7 +227,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Story End -->
 
 

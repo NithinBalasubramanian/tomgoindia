@@ -40,6 +40,26 @@
     <a href="" class="social_link_in" target="_blank">
         <i class="fab fa-instagram" aria-hidden="true"></i>
     </a>
+
+    <?php include 'config/connection.php'; ?>
+
+    <!-- query insertion -->
+
+    <?php if(isset($_POST['query_submit'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $contact = $_POST['contact'];
+        $message = $_POST['message'];
+        $product = $_POST['product'];
+        $enq_status = '1';
+        $status = '1';
+
+        $ins_sql = "INSERT INTO enquiry (name,email,contact,message,product,enq_status,status) VALUES ('$name','$email','$contact','$message','$product','$enq_status','$status')";
+        //echo $ins_sql; exit;
+        mysqli_query($db,$ins_sql);
+
+} ?>
+
         <!-- Modal  -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -50,33 +70,35 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <form action="" method="post">
             <div class="modal-body">
                 <p>Submit your contact information and the your enquiry; we will get back to you shortly.</p>
                 <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name" required>
                 </div>
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="email" class="form-control">
+                    <input type="email" class="form-control" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="">Contact</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="contact" required>
                 </div>
                 <div class="form-group">
                     <label for="">Product</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="product" required>
                 </div>
                 <div class="form-group">
                     <label for="">Message</label>
-                    <textarea rows="5" type="text" class="form-control"></textarea>
+                    <textarea rows="5" type="text" class="form-control" name="message" required></textarea>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-sm" style="background-color:rgba(241, 107, 34);border:1px solid rgba(241, 107, 34);outline:none;">Send</button>
+                <input type="submit" class="btn btn-primary btn-sm" style="background-color:rgba(241, 107, 34);border:1px solid rgba(241, 107, 34);outline:none;" value="Send" name="query_submit">
             </div>
+            </form>
             </div>
         </div>
         </div>
@@ -96,43 +118,27 @@
                     <div class="header-top row align-items-center">
                         <div class="col-lg-3">
                             <div class="brand">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <!-- Tomgoindia -->
                                     <img src="img/tomgo/logo.jpg" alt="Logo">
                                 </a>
+                                <div class="navbar-toggler menu"  style="border:none;float:right;margin-right:20px;margin-top:20px;">
+                                        <span class="navbar-toggler-icon" >
+                                            <i class="fa fa-bars menu_on" style="font-size: 28px;" aria-hidden="true"></i>
+                                        </span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            <div class="topbar">
-                                <div class="topbar-col">
-                                    <a href="tel:+91 9842106636"><i class="fa fa-phone-alt"></i>+91 9842106636</a>
-                                </div>
-                                <div class="topbar-col">
-                                    <a href="mailto:info@tomgoindia.com"><i class="fa fa-envelope"></i>info@tomgoindia.com</a>
-                                </div>
-                                <div class="topbar-col">
-                                    <div class="topbar-social">
-                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a href=""><i class="fab fa-youtube"></i></a>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
-                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="navbar navbar-expand-lg bg-light navbar-light">
-                                <a href="#" class="navbar-brand">MENU</a>
-                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-
-                                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                <div class="toggle toggle_off justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
                                         <a href="index.php" class="nav-item nav-link <?php active('index.php');?> <?php active('');?>">Home</a>
                                         <a href="about.php" class="nav-item nav-link <?php active('about.php');?>">About Us</a>
                                         <a href="product.php" class="nav-item nav-link <?php active('product.php');?>">Products</a>
                                         <a href="service.php" class="nav-item nav-link <?php active('service.php');?>">Services</a>
                                         <a href="contact.php" class="nav-item nav-link <?php active('contact.php');?>">Contact Us</a>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="quote nav-item nav-link">Get A Quote</a>
                                         <!-- <div class="nav-item dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
                                             <div class="dropdown-menu">
@@ -140,7 +146,6 @@
                                                 <a href="#" class="dropdown-item">Sub Item 2</a>
                                             </div>
                                         </div> -->
-                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="btn">Get A Quote</a>
                                     </div>
                                 </div>
                             </div>
